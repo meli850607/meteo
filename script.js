@@ -3,4 +3,4 @@ window.fetch('http://api.openweathermap.org/data/2.5/weather?q=Nantes&lang=fr&un
   .then(resjson => console.log(resjson))
 
 
-//resjson(.main.name) = document.getElementsByClassName('ville')
+//resjson.main.name = document.getElementsByClassName('ville')
