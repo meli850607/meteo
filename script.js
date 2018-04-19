@@ -23,8 +23,8 @@ $(document).ready(function() {
 });
 
 function show(data) {
-  return "<h3><strong>temps</strong>: " + data.weather[0].main + "</h3>" +
-          "<h3><strong>temps</strong>: " + data.weather[0].description + "</h3>"; 
+    return"<h3><strong>Temps</strong>: "+ data.weather[1].main +"</h3>" +
+          "<h3><strong>Temps</strong>: "+ data.weather[2].description +"</h3>"; 
 }
 
 
