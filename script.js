@@ -1,3 +1,4 @@
+"user strict"
 $(document).ready(function() {
   $("#submitWeather").click(function() {
     var city = $("#city").val();
@@ -23,10 +24,11 @@ $(document).ready(function() {
 });
 
 function show(data) {
-    return"<h3><strong>Temps</strong>: "+ data.weather[1].main +"</h3>" +
-          "<h3><strong>Temps</strong>: "+ data.weather[2].description +"</h3>"; 
+    return "<h3><strong>Temps</strong>: "+ data.weather[0].main +"</h3>" +
+           "<h3><strong>Temps</strong>: "+ data.weather[0].description +"</h3>";
 }
 
+//à continuer avec vidéo : https://www.youtube.com/watch?v=6imiFFeDIzE
 
 /*window.fetch('http://api.openweathermap.org/data/2.5/weather?q=Nantes&lang=fr&units=metric&appid=3a3255d86f5d921cd5f2526dcdd05977')
   .then(res => res.json())
