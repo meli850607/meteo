@@ -27,8 +27,7 @@ function show(data){
           return "<h3 style='font-size:40px; font-weight: bold;' class='text-center'>La Météo à: " +
             data.name + ", " + data.sys.country + "</h3>" +
 
-    "<h3><strong>Météo</strong>: "+ data.weather[0].main +"</h3>" +
-    "<h3><strong>Description</strong>: "+ data.weather[0].description +"</h3>" +
+    "<h3><strong>Météo</strong>: "+ data.weather[0].description +"</h3>" +
     "<h3><strong>Température</strong>: " + data.main.temp + "&deg;C</h3>" +
     "<h3><strong>Pression</strong>: " + data.main.pressure + "hPa</h3>" +
     "<h3><strong>Humidité</strong>: " + data.main.humidity + "%</h3>" +
@@ -39,11 +38,4 @@ function show(data){
 
 }
 
-//à continuer avec vidéo : https://www.youtube.com/watch?v=6imiFFeDIzE
-
-/*window.fetch('http://api.openweathermap.org/data/2.5/weather?q=Nantes&lang=fr&units=metric&appid=3a3255d86f5d921cd5f2526dcdd05977')
-  .then(res => res.json())
-  .then(resjson => console.log(resjson))
-*/
-
-//resjson.main.name = document.getElementsByClassName('ville')
+//http://api.openweathermap.org/data/2.5/weather?q=Nantes&lang=fr&units=metric&appid=3a3255d86f5d921cd5f2526dcdd05977

@@ -1,6 +1,43 @@
+body{
+
+}
+
 input{
   text-align: center;
+  border: 2px solid #000!important;
 }
 .container{
   text-align: center;
+  margin-bottom:20px;
+}
+
+h2{
+  font-family: 'Cabin Sketch', cursive;
+  color: #000;
+  font-size:60px;
+  font-weight:600;
+}
+
+.jumbotron{
+  background-color: #fab1a0;
+}
+
+.form-group{
+  margin-top: 30px;
+}
+
+.btn{
+  background-color: #fab1a0!important;
+  border: 1px solid #fab1a0!important;
+  color: #000!important;
+}
+.btn:hover{
+  background-color: #000!important;
+  color: #fff!important;
+  border: 1px solid #fab1a0;
+  transition: 1s!important;
+}
+
+#show{
+  font-family: 'Pinyon Script', cursive;
 }
