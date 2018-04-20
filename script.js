@@ -24,8 +24,8 @@ $(document).ready(function() {
 });
 
 function show(data){
-          return "<h3 style='font-size:40px; font-weight: bold;' class='text-center'>La Météo à: " +
-            data.name + ", " + data.sys.country + "</h3>" +
+          return "<h3 style='font-size:40px; font-weight: bold;' class='text-center'>La Météo à : " +
+            data.name + " , " + data.sys.country + "</h3>" +
 
     "<h3><strong>Météo</strong>: "+ data.weather[0].description +"</h3>" +
     "<h3><strong>Température</strong>: " + data.main.temp + "&deg;C</h3>" +
