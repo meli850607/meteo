@@ -27,17 +27,21 @@ function show(data){
           return "<h3 style='font-size:40px; font-weight: bold;' class='text-center'>La Météo à : " +
             data.name + " , " + data.sys.country + "</h3>" +
 
-    "<h3><strong>Météo</strong>: "+ data.weather[0].description +"</h3>" +
-    "<h3><strong>Température</strong>: " + data.main.temp + "&deg;C</h3>" +
-    "<h3><strong>Pression</strong>: " + data.main.pressure + "hPa</h3>" +
-    "<h3><strong>Humidité</strong>: " + data.main.humidity + "%</h3>" +
-    "<h3><strong>Température maximale</strong>: " + data.main.temp_max + "&deg;C</h3>" +
-    "<h3><strong>Température minimale</strong>: " + data.main.temp_min + "&deg;C</h3>" +
-    "<h3><strong>Vitesse du vent</strong>: " + data.wind.speed + "m/s</h3>" +
-    "<h3><strong>Direction du vent</strong>: " + data.wind.deg + "&deg;</h3>";
+    "<h3><strong>Météo</strong>"+" : " + data.weather[0].description +"</h3>" +
+    "<h3><strong>Température</strong>"+" : " + data.main.temp + "&deg;C</h3>" +
+    "<h3><strong>Pression</strong>"+" : " + data.main.pressure + "hPa</h3>" +
+    "<h3><strong>Humidité</strong>"+" : " + data.main.humidity + "%</h3>" +
+    "<h3><strong>Température maximale</strong>"+" : " + data.main.temp_max + "&deg;C</h3>" +
+    "<h3><strong>Température minimale</strong>"+" : " + data.main.temp_min + "&deg;C</h3>" +
+    "<h3><strong>Vitesse du vent</strong>"+" : " + data.wind.speed + "m/s</h3>" +
+    "<h3><strong>Direction du vent</strong>"+" : " + data.wind.deg + "&deg;</h3>";
 
 }
-
+switch(data.weather.main){
+  case 'Clear':
+  document.getElementByClassName('container') = background-image = url(img/cielbleu.jpg);
+  break;
+}
 /*var i = data.weather[0].description;
 if (i === "ciel degagé"){
   document.getElementById("cielbleu").innerHTML =
