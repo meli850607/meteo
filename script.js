@@ -22,7 +22,7 @@ $(document).ready(function() {
   });
 
 });
-
+//fonction affiche météo
 function show(data){
           return "<h3 style='font-size:40px; font-weight: bold;' class='text-center'>La Météo à : " +
             data.name + " , " + data.sys.country + "</h3>" +
@@ -34,8 +34,13 @@ function show(data){
     "<h3><strong>Température maximale</strong>: " + data.main.temp_max + "&deg;C</h3>" +
     "<h3><strong>Température minimale</strong>: " + data.main.temp_min + "&deg;C</h3>" +
     "<h3><strong>Vitesse du vent</strong>: " + data.wind.speed + "m/s</h3>" +
-    "<h3><strong>Direction du vent</strong>: " + data.wind.deg + "&deg;C</h3>";
+    "<h3><strong>Direction du vent</strong>: " + data.wind.deg + "&deg;</h3>";
 
 }
+
+/*var i = data.weather[0].description;
+if (i === "ciel degagé"){
+  document.getElementById("cielbleu").innerHTML =
+}*/
 
 //http://api.openweathermap.org/data/2.5/weather?q=Nantes&lang=fr&units=metric&appid=3a3255d86f5d921cd5f2526dcdd05977
