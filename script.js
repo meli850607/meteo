@@ -41,6 +41,9 @@ $(document).ready(function() {
 
           } else if (data.weather[0].icon === "50d") {
             document.getElementById('container').style.backgroundImage = 'url(img/brouillard.jpg)'
+
+          } else if (data.weather[0].icon === "50n") {
+            document.getElementById('container').style.backgroundImage = 'url(img/brouillard.jpg)'
           }else{
 
           }
@@ -66,7 +69,8 @@ function show(data) {
           "<h3><strong>Température maximale</strong>" + " : " + data.main.temp_max + "&deg;C</h3>" +
           "<h3><strong>Température minimale</strong>" + " : " + data.main.temp_min + "&deg;C</h3>" +
           "<h3><strong>Vitesse du vent</strong>" + " : " + data.wind.speed + "m/s</h3>" +
-          "<h3><strong>Direction du vent</strong>" + " : " + data.wind.deg + "&deg;</h3>" ;
+          "<h3><strong>Direction du vent</strong>" + " : " + data.wind.deg + "&deg;</h3>";/* +
+          "<h3><strong>Weather</strong>" + " : " + data.weather[0].icon + "</h3>"*/
 
 }
 
