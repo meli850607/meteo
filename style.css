@@ -21,9 +21,6 @@ h2{
   font-weight:600;
 }
 
-h3{
-  color: #1e272e;
-}
 
 .jumbotron{
   background-color: #fab1a0;
@@ -47,4 +44,5 @@ h3{
 
 #show{
   font-family: 'Shrikhand', cursive;
+  color: #1e272e;
 }

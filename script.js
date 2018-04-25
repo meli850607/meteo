@@ -48,7 +48,7 @@ $(document).ready(function() {
       });
 
     } else {
-      $("#error").html('cette case ne peut pas être vide');
+      $("#error").html('Cette case ne peut pas être vide');
     }
 
   });
