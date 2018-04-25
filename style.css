@@ -16,7 +16,7 @@ input{
 
 h2{
   font-family: 'Cabin Sketch', cursive;
-  color: #1e272e;
+  color: #000;
   font-size:60px;
   font-weight:600;
 }
@@ -44,5 +44,5 @@ h2{
 
 #show{
   font-family: 'Handlee', cursive;
-  color: #1e272e;
+  color: #000;
 }
