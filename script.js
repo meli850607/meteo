@@ -66,8 +66,7 @@ function show(data) {
           "<h3><strong>Température maximale</strong>" + " : " + data.main.temp_max + "&deg;C</h3>" +
           "<h3><strong>Température minimale</strong>" + " : " + data.main.temp_min + "&deg;C</h3>" +
           "<h3><strong>Vitesse du vent</strong>" + " : " + data.wind.speed + "m/s</h3>" +
-          "<h3><strong>Direction du vent</strong>" + " : " + data.wind.deg + "&deg;</h3>" +
-          "<h3><strong>icon</strong>" + " : " + data.weather[0].icon + ".png" + "</h3>";
+          "<h3><strong>Direction du vent</strong>" + " : " + data.wind.deg + "&deg;</h3>" ;
 
 }
 
