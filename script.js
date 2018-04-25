@@ -15,35 +15,57 @@ $(document).ready(function() {
 
           if (data.weather[0].icon === "01d") {
             document.getElementById('container').style.backgroundImage = 'url(img/cielbleu.jpg)'
+
+          } else if (data.weather[0].icon === "01n") {
+            document.getElementById('container').style.backgroundImage = 'url(img/Ciel étoilé.jpg)'
+
           } else if (data.weather[0].icon === "02d") {
             document.getElementById('container').style.backgroundImage = 'url(img/cielbleu.jpg)'
+
+          } else if (data.weather[0].icon === "02n") {
+            document.getElementById('container').style.backgroundImage = 'url(img/Ciel étoilé.jpg)'
 
           } else if (data.weather[0].icon === "03d") {
             document.getElementById('container').style.backgroundImage = 'url(img/nuageux.jpg)'
 
+          } else if (data.weather[0].icon === "03n") {
+            document.getElementById('container').style.backgroundImage = 'url(img/nuitnuageux.jpg)'
+
           } else if (data.weather[0].icon === "04d") {
               document.getElementById('container').style.backgroundImage = 'url(img/nuageux.jpg)'
+
+          } else if (data.weather[0].icon === "04n") {
+              document.getElementById('container').style.backgroundImage = 'url(img/nuitnuageux.jpg)'
 
           } else if (data.weather[0].icon === "09d") {
             document.getElementById('container').style.backgroundImage = 'url(img/pluie.jpg)'
 
+          } else if (data.weather[0].icon === "09n") {
+            document.getElementById('container').style.backgroundImage = 'url(img/pluienuit.jpg)'
+
           } else if (data.weather[0].icon === "10d") {
             document.getElementById('container').style.backgroundImage = 'url(img/pluie.jpg)'
 
-          } else if (data.weather[0].icon === "09n") {
-            document.getElementById('container').style.backgroundImage = 'url(img/pluie.jpg)'
+          } else if (data.weather[0].icon === "10n") {
+            document.getElementById('container').style.backgroundImage = 'url(img/pluienuit.jpg)'
 
           } else if (data.weather[0].icon === "11d") {
-            document.getElementById('container').style.backgroundImage = 'url(img/orage.jpg)'
+            document.getElementById('container').style.backgroundImage = 'url(img/oragejour.jpg)'
+
+          } else if (data.weather[0].icon === "11n") {
+            document.getElementById('container').style.backgroundImage = 'url(img/oragenuit.jpg)'
 
           } else if (data.weather[0].icon === "13d") {
             document.getElementById('container').style.backgroundImage = 'url(img/neige.jpg)'
+
+          } else if (data.weather[0].icon === "13n") {
+            document.getElementById('container').style.backgroundImage = 'url(img/neigenuit.jpg)'
 
           } else if (data.weather[0].icon === "50d") {
             document.getElementById('container').style.backgroundImage = 'url(img/brouillard.jpg)'
 
           } else if (data.weather[0].icon === "50n") {
-            document.getElementById('container').style.backgroundImage = 'url(img/brouillard.jpg)'
+            document.getElementById('container').style.backgroundImage = 'url(img/brumenuit.jpg)'
           }else{
 
           }
