@@ -1,6 +1,9 @@
 "use strict"
-$(document).ready(function() {
-  $('#submitWeather').click(function() {
+
+function search() {
+
+// $(document).ready(function() {
+//   $('#submitWeather').click(function() {
     var city = $("#city").val();
     if (city != '') {
 
@@ -12,6 +15,7 @@ $(document).ready(function() {
           var widget = show(data);
           $("#show").html(widget);
           $("#city").val('');
+
 
           if (data.weather[0].icon === "01d") {
             document.getElementById('container').style.backgroundImage = 'url(img/soleil.gif)'
@@ -76,9 +80,8 @@ $(document).ready(function() {
       $("#error").html('Cette case ne peut pas être vide');
     }
 
-  });
+  };
 
-});
 //fonction affiche météo
 function show(data) {
 
@@ -94,7 +97,16 @@ function show(data) {
           "<h3><strong>Direction du vent</strong>" + " : " + data.wind.deg + "&deg;</h3>";/* +
           "<h3><strong>Weather</strong>" + " : " + data.weather[0].icon + "</h3>"*/
 
+
 }
+
+
+                var input = document.getElementById('city');
+                   input.addEventListener('keypress', function(event) {
+                     if (event.keyCode === 13) {
+                         console.log('ok');
+                         search();
+                     }})
 
 /*var weather = data.weather.main;
 switch(weather){
